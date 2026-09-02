@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago's Bristol</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8ed;
+  color: #2b1b12;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff8ed;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ead8c0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #603b25;
+}
+
+nav a {
+  color: #2b1b12;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 80vh;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #fff1d7, #e9cfaa);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero small {
+  color: #b27a3b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(50px, 9vw, 90px);
+  line-height: .95;
+  color: #603b25;
+  margin: 15px 0;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background: #603b25;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 8px 0 0;
+}
+
+.btn:hover {
+  opacity: .85;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 75px 8%;
+}
+
+h2 {
+  color: #603b25;
+  font-size: 38px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(70,40,10,.08);
+}
+
+.card h3 {
+  color: #603b25;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.location {
+  background: #ead5b7;
+  padding: 35px;
+  border-radius: 25px;
+}
+
+footer {
+  background: #2b1b12;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 650px) {
+  nav .links {
+    display: none;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 60px 7%;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">☕ Santiago's Bristol</div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#location">Find Us</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+
+    <small>Independent Café • Central Bristol</small>
+
+    <h1>
+      Good food.<br>
+      Great coffee.<br>
+      Friendly prices.
+    </h1>
+
+    <p>
+      A welcoming independent café on Cannon Street,
+      right beside Bristol Bus Station and historic
+      St James Priory.
+    </p>
+
+    <a class="btn" href="#menu">View Menu</a>
+    <a class="btn" href="#location">Find Us</a>
+
+  </div>
+</header>
+
+<section id="about">
+
+  <h2>Welcome to Santiago's</h2>
+
+  <p>
+    Santiago's is a friendly, casual café serving affordable
+    breakfasts, coffee, light lunches and freshly baked treats.
+    Whether you're catching a coach, heading into the city or
+    looking for a good-value meal, you're welcome here.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🍳 Breakfast</h3>
+      <p>Full English and vegetarian breakfasts are popular choices.</p>
+    </div>
+
+    <div class="card">
+      <h3>☕ Coffee & Cakes</h3>
+      <p>Coffee, tea, hot chocolate and freshly baked cakes.</p>
+    </div>
+
+    <div class="card">
+      <h3>🥗 Options for Everyone</h3>
+      <p>Vegetarian, vegan and plant-based milk options available.</p>
+    </div>
+
+    <div class="card">
+      <h3>🥡 Takeaway</h3>
+      <p>Perfect for a quick meal or drink before your journey.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="menu">
+
+  <h2>What to Order</h2>
+
+  <div class="menu">
+
+    <div class="card">
+      <h3>🍳 Breakfast</h3>
+      <ul>
+        <li>Full English</li>
+        <li>Vegetarian Breakfast</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🥪 Lunch</h3>
+      <ul>
+        <li>Paninis</li>
+        <li>Jacket Potatoes</li>
+        <li>Soups</li>
+        <li>Curries</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>☕ Drinks & Treats</h3>
+      <ul>
+        <li>Coffee & Tea</li>
+        <li>Hot Chocolate</li>
+        <li>Freshly Baked Cakes</li>
+        <li>Plant-Based Milk</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="reviews">
+
+  <h2>What People Say</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>⭐ Great Value</h3>
+      <p>
+        Customers frequently highlight inexpensive breakfasts,
+        generous portions and reasonably priced drinks and cakes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>😊 Friendly Staff</h3>
+      <p>
+        Visitors often praise the welcoming staff,
+        especially when stopping by before journeys.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Convenient Location</h3>
+      <p>
+        A convenient place to stop before or after travelling
+        through Bristol.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="location">
+
+  <div class="location">
+
+    <h2>Find Santiago's</h2>
+
+    <p>
+      <strong>Cannon Street, Bristol</strong>
+    </p>
+
+    <p>
+      Located beside Bristol Bus Station and next to
+      historic St James Priory.
+    </p>
+
+    <p>
+      ✓ Wheelchair-accessible entrance<br>
+      ✓ Card payments<br>
+      ✓ Contactless payments<br>
+      ✓ Upstairs seating<br>
+      ✓ Outdoor tables
+    </p>
+
+    <a
+      class="btn"
+      target="_blank"
+      href="https://www.google.com/maps/search/?api=1&query=Santiago%27s+Cannon+Street+Bristol">
+      Get Directions
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h3>Santiago's Bristol ☕</h3>
+
+  <p>
+    Independent café in the heart of Bristol.
+  </p>
+
+</footer>
+
+</body>
+</html>
